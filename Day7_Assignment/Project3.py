@@ -8,7 +8,7 @@ root=Tk()
 root.geometry("400x400")
 root.title("Youtube Video downloader")
 
-#Function for download function
+#Function for download button
 def downloaded():
     a=var.get() #https://www.youtube.com/watch?v=AI6Nk70Vvew
     yt_video=YouTube(a).streams.filter(progressive=True,file_extension='mp4').order_by('resolution').desc().first()
